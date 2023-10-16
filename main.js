@@ -16,7 +16,10 @@ async function getAdvice() {
      adviceText.textContent = '"' + advice + '"';
    } catch (error) {
      console.error(error);
-   }
+   } finally {
+      loadingIndicator.style.display = 'none'; // Hide loading indicator
+      btn.disabled = false; // Enable the button after the request
+    }
  }
  
  // Event listener for the button click
