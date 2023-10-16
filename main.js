@@ -24,4 +24,3 @@ async function getAdvice() {
 
  // Initial advice fetch when the page loads
 window.addEventListener('load', getAdvice);
- 

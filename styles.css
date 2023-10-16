@@ -121,9 +121,9 @@ h1 {
   height: 4rem;
   border-radius: 50%;
   background-color: hsl(var(--clr-primary-2));
-  background-image: url(./assets/images/icon-dice.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border: none;
 }
