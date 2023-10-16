@@ -130,5 +130,14 @@ h1 {
 .btn:hover, .btn :focus {
   box-shadow: 0 0 4rem hsl(var(--clr-primary-2), 0.75);
 }
+.btn img {
+  color: hsl(var(--clr-neutral-3));
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
 
 /*# sourceMappingURL=styles.css.map */

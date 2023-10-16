@@ -91,6 +91,9 @@ h1 {
    align-items: center;
    flex-direction: column;
 
+   // max-height: auto; /* Set a reasonable maximum height for the container */
+   // transition: max-height 0.5s; /* Add a transition for the 'max-height' property */
+
    @media (max-width: 500px) {
       padding: 2.5rem 1.5rem;
    }
@@ -130,4 +133,14 @@ h1 {
    &:hover,:focus {
       box-shadow: 0 0 4rem hsl(var(--clr-primary-2), .75);
    }
+
+   & img {
+      color: hsl(var(--clr-neutral-3));
+   }
 }
+
+.hidden {
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.5s, visibility 0.5s;
+ }
